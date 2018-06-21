@@ -1,0 +1,275 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body {
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	background: #e7e4e4;
+	color: #000;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+*,:after,:before {
+	box-sizing:border-box
+}
+h1,h2 {
+	margin: 0;
+	padding-bottom: 12px;
+	line-height: normal;
+}
+h1 {
+	font-size: 24px;
+	color: grey;
+}
+h1::first-letter {
+	color: black;
+}
+h2 {
+	font-size: 16px;
+	color: grey;
+}
+h2::first-letter {
+	color: black;
+}
+p {
+	margin-bottom: 15px;
+}
+blockquote {
+	color: #777;
+	margin-left: 15px;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/*Navigation*/
+
+#menu {
+	display: block;
+	list-style: none;
+	background-color: black;
+}
+#menu li {
+	float: left;
+	border-right: 1px rgb(76, 76, 76) solid;
+}
+#menu li a {
+	height: 30px;
+	padding: 5px 20px;
+	line-height: 20px;
+	display: block;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+#menu li a:hover {
+	text-shadow: 0 0 15px rgba(255,255,255, 0.8);
+}
+
+/*Header*/
+
+#header {
+	height: 60px;
+	background-image: url("../images/headerbg.png");
+}
+.logo {
+	float: left;
+}
+.search-form{
+	float: right;
+	padding: 18px 0;
+}
+.search-form > input[type="text"] {
+	width: 352px;
+	height: 24px;
+	background-color: rgb(50, 50, 50);
+	border: 1px rgb(76, 76, 76) solid;
+	color: #fff;
+	font-size: 12px;
+	line-height: 24px;
+	margin: 0 10px 0 0;
+	padding: 0 5px;
+	float: left;
+}
+.search-form > button {
+	width: 73px;
+	height: 24px;
+	display: inline-block;
+	cursor: progress;
+	color: #fff;
+	background-color: rgb(0, 0, 0);
+	border:1px rgb(76, 76, 76) solid;
+	margin: 0;
+	padding: 0 5px;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: bold;
+	float: left;
+}
+
+/*Slider*/
+
+#slider {
+	background: black;
+}
+#slider .container {
+	height: 328px;
+	position: relative;
+}
+#slider img {
+	display: block;
+}
+.textslider {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	color: rgb(231,231,231);
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	font-size: 13px;
+}
+
+#main {
+	background-image: url("../images/mainbg.png");
+	padding: 12px;
+	width: 1002px;
+	height: 1196px;
+}
+#main .section {
+	padding-top: 18px;
+}
+#main .section:first-child {
+	padding-top: 0;
+}
+#main .section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Images*/
+
+.img {
+	display: block;
+	list-style: none;
+	margin: -20px 0 0 -20px;
+	padding: 0;
+}
+.img li {
+	float: left;
+	box-shadow: 0 5px 5px rgba(0,0,0, 0.3);
+	margin: 20px 0 0 20px;
+	border: 1px solid white;
+}
+.img li a {
+	width: 225px;
+	height: 166px;
+	display: block;
+}
+.img li:hover {
+	border: 1px solid black;
+}
+
+/*Lists*/
+
+#list .column {
+	width: 33%;
+	float: left;
+	padding: 0 15px;
+}
+#list .column:first-child {
+	padding-left: 0;
+}
+#list ul, #clist ol, #clist dl {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+dd {
+ margin-left: 40px;
+}
+/*Tables*/
+
+table {
+	border-collapse: collapse;
+	border:1px solid black;
+	padding: 10px;
+	text-align: left;
+	width: 96.6%;
+}
+th {
+	background:rgb(239,239,239);
+	border: 1px solid black;
+	padding: 9px;
+	
+}
+td,tr{border:1px solid black;
+	padding:9px;
+}
+
+/*Form bottom*/
+.contact-form .form-item{
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.contact-form label {
+	line-height: 24px;
+}
+.contact-form input[type=checkbox], .contact-form input[type=radio] {
+	width: auto;
+	height: auto;
+	margin: 0 5px 0 0;
+	padding: 0;
+	line-height: normal;
+	float: left;
+	border: none;
+}
+.contact-form textarea {
+	width: 324px;
+	height: 122px;
+	padding: 5px;
+	margin: 0;
+	background-color: #fff;
+	border: 1px rgb(183, 183, 183) solid;
+}
+.contact-form select {
+	width: 224px;
+	height: 28px;
+	padding: 5px;
+	margin: 0;
+	background-color: #fff;
+	border: 1px rgb(183, 183, 183) solid;
+}
+.contact-form input[type="text"]{
+	width: 224px;
+	height: 28px;
+	padding: 0 5px;
+	margin: 0;
+	background-color: #fff;
+	border: 1px rgb(183, 183, 183) solid;
+}
+.contact-form button {
+	width: 90px;
+	height: 38px;
+	cursor: pointer;
+	display: inline-block;
+	color: #fff;
+	background-color: rgb(32, 32, 32);
+	border:1px rgb(0, 0, 0) solid;
+	margin: 0;
+	padding: 0 5px;
+	font-weight: bold;
+}
+/*Footer*/
+#footer {
+	color: #777;
+	padding: 5px 0;
+}
